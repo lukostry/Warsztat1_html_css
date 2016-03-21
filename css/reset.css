@@ -29,12 +29,14 @@ article, aside, figure, footer, header, nav, section, details, summary {display:
 html {
 	box-sizing: border-box;
 }
-
+/*
+Zakomentowane przeze mnie
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
 }
+*/
 
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
 
