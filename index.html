@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Kurs Front-Ent: warsztaty nr 1</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +12,14 @@
         <div class="logo">Sit <span class="diff-font-color">on</span> Chair</div>
         <nav class="menu-top">
             <ul>
-                <li>O firmie</li>
+                <li class="about">O firmie
+                    <ul id="hidden">
+                        <li>Aktualności</li>
+                        <li>Nasz team</li>
+                        <li>Historia</li>
+                        <li class="arrow-up"></li>
+                    </ul>
+                </li>
                 <li>Galeria</li>
                 <li>Kontakt</li>
             </ul>
@@ -21,38 +27,88 @@
       </div>     
     </header>
     <section class="row2">
-      <div class="main-width">      
-        <div class="col"></div>
-        <div class="col"></div>
+      <div class="main-width"> 
+        <div class="col1">
+            <p>&lt;</p>
+            <img src="images/black_chair.png" alt="black chair">
+        </div>
+        <div class="col2">
+            <h1>Sit <span class="content-diff-font-color">on</span> our <span class="content-diff-font-color">chair</span></h1>
+            <p class="text">Cupcake ipsum dolor. Sit amet cheesecake. Jelly-o chocolate bar chocolate. Croissant wafer chocolate bar carrot cake gummies. Cupcake ipsum dolor. Sit amet cheesecake. Jelly-o chocolate bar chocolate. Croissant wafer chocolate bar carrot cake gummies.</p>
+            <a href="">Zobacz więcej</a>
+            <p class="greater-sign">&gt;</p>
+        </div>
       </div>      
     </section>
     <section class="row3">
       <div class="main-width">    
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col1of3"><div class="inner_div1">Chair CLAIR<div class="line1"></div></div></div>
+        <div class="col2of3"><div class="inner_div1">Chair MARGARITA<div class="line1"></div></div></div>
+        <div class="col3of3"><h1>Find all inputs<div class="line2"></div></h1><p>Gingerbread macaroon chupa chups caramels cake sweet tart dessert. Gummi bears cake chocolate cake. Croissant macaroon carrot cake cake. Muffin tiramisu oat cake jujubes carrot cake marzipan.</p><p>Sweet icing jelly. Sesame snaps tart liquorice candy canes.</p></div>
       </div>      
     </section>
     <section class="row4">
       <div class="main-width">
-        <div class="prices"></div>  
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>      
+        <div class="prices"><h1>Cennik</h1><div class="line3"></div></div>  
+        <div class="col1of3">
+            <div class="circle-box">
+                <div class="circle-box-small"></div>    
+            </div>
+            <div class="plan">Basic Plan</div>
+            <div class="inner-circle"><div class="top-line">85<sup>99</sup></div><div class="bottom-line">PLN/MSC</div></div>
+            <div class="transportation">Zakup towaru + dowóz</div>
+            <div class="service">Serwis</div>
+            <div class="block-link"><a href="">Dołącz</a></div>
+        </div>
+          <div class="col2of3">
+            <div class="circle-box">
+                <div class="circle-box-small"></div>    
+            </div>
+            <div class="plan">Standard Plan</div>
+            <div class="inner-circle"><div class="top-line">95<sup>99</sup></div><div class="bottom-line">PLN/MSC</div></div>
+            <div class="transportation">Zakup towaru + dowóz</div>
+            <div class="service">Serwis</div>
+            <div class="warranty">Gwarancja 5 lat</div>
+            <div class="block-link"><a href="">Dołącz</a></div>
+         </div> 
+        <div class="col3of3">
+            <div class="circle-box">
+                <div class="circle-box-small"></div>    
+            </div>
+            <div class="plan">Advance Plan</div>
+            <div class="inner-circle"><div class="top-line">211<sup>00</sup></div><div class="bottom-line">PLN/MSC</div></div>
+            <div class="transportation">Zakup towaru + dowóz</div>
+            <div class="service">Serwis</div>
+            <div class="warranty">Gwarancja 6 lat</div>
+            <div class="tips">Porady projektanta</div>
+            <div class="block-link"><a href="">Dołącz</a></div>
+         </div> 
+        </div>  
     </section>
     <section class="row5">
       <div class="main-width"> 
-        <div class="contact"></div>  
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="contact"><h1>Kontakt</h1><div class="line3"></div></div>
+        <div class="image-form"><img src="images/red_chair.png" alt="krzesło"></div>
+        <div class="check-placeholder"></div>   
+        <form>
+            <label><input type="text" class="name" placeholder="Imię"></label>
+            <label><input type="text" class="email" placeholder="email"></label>
+            <textarea class="message" placeholder="Wiadomość"></textarea>
+            <input type="checkbox" class="checkbox"><div class="confirmation">Zgadzam się na przetwarzanie danych osobowych</div>
+            <input type="submit" class="submit" value="Wyślij">
+        </form>
       </div>
     </section>
     <footer class="row6">
       <div class="main-width">    
-        <div class="copyrights"></div>
-        <div class="icons"></div>     
-        <div class="logo"></div>
+        <div class="copyrights">Copyright 2014 | All rights reserved. - Sit On Chair</div>
+        <div class="icons">
+            <div class="flickr"><img src="images/flickr.png"></div>
+            <div class="vimeo"><img src="images/vimeo.png"></div>
+            <div class="pinterest"><img src="images/pinterest.png"></div>
+            <div class="twitter"><img src="images/twitter.png"></div>
+        </div>     
+        <div class="logo-bottom">Sit <span class="diff-font-bolder">on</span> Chair</div>
       </div>      
     </footer>
 </body>
