@@ -5,6 +5,7 @@
     <title>Kurs Front-Ent: warsztaty nr 1</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
     <header class="row1">
@@ -20,7 +21,15 @@
                         <li class="arrow-up"></li>
                     </ul>
                 </li>
-                <li>Galeria</li>
+                <li class="gallery">Galeria
+                    <ul class="gallery-submenu">
+                        <li>Krzesła</li>
+                        <li>Obicia</li>
+                        <li>Maty ochronne</li>
+                        <li class="invisibleElement"></li>
+                        <li class="arrow-up"></li>
+                    </ul>
+                </li>    
                 <li>Kontakt</li>
             </ul>
         </nav>
@@ -29,14 +38,18 @@
     <section class="row2">
       <div class="main-width"> 
         <div class="col1">
-            <p>&lt;</p>
-            <img src="images/black_chair.png" alt="black chair">
+            <p id="prevPicture">&lt;</p>
+            <ul class="slider">
+                <li><img src="images/black_chair.png" alt="black chair"></li>
+                <li><img src="images/orange.png" alt="orange chair"></li>
+                <li><img src="images/red.png" alt="red chair"></li>
+            </ul>    
         </div>
         <div class="col2">
             <h1>Sit <span class="content-diff-font-color">on</span> our <span class="content-diff-font-color">chair</span></h1>
             <p class="text">Cupcake ipsum dolor. Sit amet cheesecake. Jelly-o chocolate bar chocolate. Croissant wafer chocolate bar carrot cake gummies. Cupcake ipsum dolor. Sit amet cheesecake. Jelly-o chocolate bar chocolate. Croissant wafer chocolate bar carrot cake gummies.</p>
             <a href="">Zobacz więcej</a>
-            <p class="greater-sign">&gt;</p>
+            <p class="greater-sign" id="nextPicture">&gt;</p>
         </div>
       </div>      
     </section>

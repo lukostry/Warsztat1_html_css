@@ -63,6 +63,9 @@ header .logo {
 .menu-top .about {
     position: relative;
 }
+.menu-top .gallery {
+    position: relative;
+}
 .menu-top li:last-child {
     margin: 0;
 }
@@ -77,12 +80,14 @@ header .logo {
    
 }
 #hidden li:first-child {
+/*
     display: block;
     text-transform: none;
     font-weight: normal;
     font-size: 14px;
+*/
     margin: 14px 0 8px 12px;
-    font-size: 14px;
+/*    font-size: 14px;*/
 }
 #hidden li {
     display: block;
@@ -106,6 +111,40 @@ header .logo {
 .about:hover #hidden {
     visibility: visible;
 }
+.gallery-submenu {
+    display: none;
+    background-color: black;
+    position: absolute;
+/*    margin-top: 25px;*/
+    top: 40px;
+    left: -15px;
+    width: 120px;
+    height: 95px;
+   
+}
+.gallery-submenu li:first-child {
+    margin: 14px 0 8px 12px;
+}
+.gallery-submenu li {
+    display: block;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 8px 0 8px 12px;
+}
+.gallery-submenu li:last-child {
+    position: absolute;
+    top: -4px;
+    left: 42px;
+    width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid black;
+    margin: 0;
+}
+
 .row2 {
     height: 370px;
     padding: 130px 0 0 0;
@@ -136,8 +175,9 @@ header .logo {
     margin-top: 125px;
 
 }
-.col1 img {
+.col1 li {
 /*    border: 1px solid blue;*/
+    display: inline-block;
     width: 430px;
     height: 360px;
 }
@@ -781,4 +821,28 @@ textarea {
 }
 .diff-font-bolder {
     font-weight: bolder;
+}
+/*klasa dodana na potrzeby JavaScript*/
+.hidden {
+    display: none;
+}
+.slider li{
+    display: none;
+}
+.slider .visible {
+    display: inline-block;
+}
+.gallery .visible {
+    display: block;
+}
+.pointer {
+    cursor: pointer;
+}
+.invisibleElement {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: -30px;
+    left: -12px;
+    width: 120px; 
+	height: 30px; 
 }
